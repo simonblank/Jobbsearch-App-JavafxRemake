@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pass_View" prefHeight="652.0" prefWidth="497.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.JobbListViewController">
+   <children>
+      <AnchorPane fx:id="add_View" layoutX="-1.0" layoutY="120.0" prefHeight="551.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Button layoutX="223.0" layoutY="443.0" mnemonicParsing="false" onAction="#addSearchedJob" text="Add" />
+            <TextField fx:id="title_TextField" layoutX="162.0" layoutY="73.0" />
+            <TextField fx:id="company_TextField" layoutX="162.0" layoutY="138.0" />
+            <Label layoutX="221.0" layoutY="56.0" text="Title" textFill="#ccc7c7" />
+            <Label layoutX="208.0" layoutY="120.0" text="Company" textFill="#ccc7c7" />
+            <Label layoutX="224.0" layoutY="189.0" text="Url" textFill="#ccc7c7" />
+            <TextField fx:id="url_TextField" layoutX="160.0" layoutY="206.0" />
+            <ImageView fx:id="CANCEL" fitHeight="25.0" fitWidth="23.0" layoutX="446.0" layoutY="33.0" onMouseClicked="#addSearchedJobHandleClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cancelIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="list_View" layoutY="120.0" prefHeight="532.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <TableView fx:id="jobListTableView" layoutX="48.0" layoutY="23.0" onKeyPressed="#JobListTableHandleKeyClick" prefHeight="376.0" prefWidth="402.0">
+               <columns>
+                  <TableColumn fx:id="title" prefWidth="202.0" text="Title" />
+                  <TableColumn fx:id="company" prefWidth="109.0" text="Company" />
+                  <TableColumn fx:id="date" prefWidth="90.0" text="Date" />
+               </columns>
+            </TableView>
+            <Button fx:id="search_Button" layoutX="48.0" layoutY="468.0" mnemonicParsing="false" onAction="#searchButtonHandleClick" prefHeight="25.0" prefWidth="402.0" text="Search" />
+            <TextField fx:id="search_TextField" layoutX="122.0" layoutY="424.0" prefHeight="25.0" prefWidth="254.0" />
+            <ImageView fx:id="ADD" fitHeight="25.0" fitWidth="23.0" layoutX="453.0" layoutY="26.0" onMouseClicked="#addSearchedJobHandleClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/addIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
