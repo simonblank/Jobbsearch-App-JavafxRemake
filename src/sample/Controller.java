@@ -27,36 +27,53 @@ import java.util.Observable;
 public class Controller  {
 
     @FXML
-    private ImageView PASSWORD , INTERVIEW , LIST , EXIT;
+    private ImageView PASSWORD , INTERVIEW , LIST , EXIT , INFORMATION , WORK;
 
     @FXML
-    private AnchorPane  interviewTab ,jobListTab , passwordTab;
+    private AnchorPane  interviewTab ,jobListTab , passwordTab , informationTab ,workTab;
 
 
     @FXML
     private void handleButtonClick(MouseEvent event){
+
         if (event.getTarget() == PASSWORD){
-            passwordTab.setVisible(true);
-            interviewTab.setVisible(false);
-            jobListTab.setVisible(false);
+            showOrHideTabs(passwordTab);
 
         }
        else if (event.getTarget() == LIST){
-            passwordTab.setVisible(false);
-            interviewTab.setVisible(false);
-            jobListTab.setVisible(true);
+            showOrHideTabs(jobListTab);
+
 
         }
         else if (event.getTarget() == INTERVIEW){
-            passwordTab.setVisible(false);
-            interviewTab.setVisible(true);
-            jobListTab.setVisible(false);
+             showOrHideTabs(interviewTab);
+
+
+        }
+        else if (event.getTarget() == WORK){
+            showOrHideTabs(workTab);
+
+
+        }
+        else if (event.getTarget() == INFORMATION){
+            showOrHideTabs(informationTab);
+
 
         }
         else if (event.getTarget() == EXIT){
             System.exit(0);
         }
 
+
+    }
+
+    public void showOrHideTabs(AnchorPane tab){
+        passwordTab.setVisible(false);
+        interviewTab.setVisible(false);
+        jobListTab.setVisible(false);
+        workTab.setVisible(false);
+        informationTab.setVisible(false);
+        tab.setVisible(true);
 
     }
 

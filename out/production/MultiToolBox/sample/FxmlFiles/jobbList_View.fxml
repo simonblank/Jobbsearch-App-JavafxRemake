@@ -10,17 +10,19 @@
       <AnchorPane fx:id="add_View" layoutX="-1.0" layoutY="120.0" prefHeight="551.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">
          <children>
             <Button layoutX="223.0" layoutY="443.0" mnemonicParsing="false" onAction="#addSearchedJob" text="Add" />
-            <TextField fx:id="title_TextField" layoutX="162.0" layoutY="73.0" />
-            <TextField fx:id="company_TextField" layoutX="162.0" layoutY="138.0" />
-            <Label layoutX="221.0" layoutY="56.0" text="Title" textFill="#ccc7c7" />
-            <Label layoutX="208.0" layoutY="120.0" text="Company" textFill="#ccc7c7" />
-            <Label layoutX="224.0" layoutY="189.0" text="Url" textFill="#ccc7c7" />
-            <TextField fx:id="url_TextField" layoutX="160.0" layoutY="206.0" />
+            <TextField fx:id="title_TextField" layoutX="162.0" layoutY="121.0" />
+            <TextField fx:id="company_TextField" layoutX="160.0" layoutY="183.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="223.0" layoutY="104.0" text="Title" textFill="#ccc7c7" />
+            <Label layoutX="211.0" layoutY="166.0" text="Company" textFill="#ccc7c7" />
+            <Label layoutX="226.0" layoutY="234.0" text="Url" textFill="#ccc7c7" />
+            <TextField fx:id="url_TextField" layoutX="162.0" layoutY="251.0" />
             <ImageView fx:id="CANCEL" fitHeight="25.0" fitWidth="23.0" layoutX="446.0" layoutY="33.0" onMouseClicked="#addSearchedJobHandleClick" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/cancelIcon.png" />
                </image>
             </ImageView>
+            <ComboBox fx:id="jobWebsites_comboBox" layoutX="34.0" layoutY="21.0" prefHeight="25.0" prefWidth="266.0" />
+            <Button fx:id="visitWebsite_Button" layoutX="326.0" layoutY="21.0" mnemonicParsing="false" onAction="#visitWebsiteHandleClick" text="Visit website" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="list_View" layoutY="120.0" prefHeight="532.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="interview_View" prefHeight="652.0" prefWidth="497.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.WorkViewController">
+   <children>
+      <AnchorPane fx:id="add_View" layoutY="120.0" prefHeight="541.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Label fx:id="hoursXMonth" layoutX="249.0" layoutY="21.0" prefHeight="17.0" prefWidth="98.0" text="hours" textFill="#ccc7c7" />
+            <TableView fx:id="workTableView" layoutX="48.0" layoutY="53.0" onKeyPressed="#handleWorkTableKeyEvent" prefHeight="301.0" prefWidth="402.0">
+               <columns>
+                  <TableColumn fx:id="company" minWidth="2.0" prefWidth="138.0" text="Company" />
+                  <TableColumn fx:id="hours" prefWidth="129.0" text="Hours" />
+                  <TableColumn fx:id="workdate" prefWidth="134.0" text="Date" />
+               </columns>
+            </TableView>
+            <ComboBox fx:id="month_ComboBox" layoutX="93.0" layoutY="17.0" onAction="#updateHoursXMonth" prefWidth="150.0" />
+            <TextField fx:id="company_TextField" layoutX="42.0" layoutY="399.0" prefHeight="25.0" prefWidth="140.0" />
+            <TextField fx:id="hours_TextField" layoutX="194.0" layoutY="399.0" prefHeight="25.0" prefWidth="67.0" />
+            <DatePicker fx:id="date_DatePicker" layoutX="270.0" layoutY="399.0" />
+            <Button fx:id="add_Button" layoutX="217.0" layoutY="465.0" mnemonicParsing="false" onAction="#handleAddButton" text="Add" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

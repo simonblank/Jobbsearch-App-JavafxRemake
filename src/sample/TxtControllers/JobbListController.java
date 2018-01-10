@@ -26,8 +26,6 @@ public class JobbListController {
     public JobbListController() {
         createTxtFileIfDontExists();
 
-        rewriteAppliedJobList(getSearchedJobbListFromOldTxt());
-
     }
 
     public void createTxtFileIfDontExists(){
@@ -47,20 +45,25 @@ public class JobbListController {
         ObservableList<Job> jobs = FXCollections.observableArrayList();
 
         try {
-            Scanner in = new Scanner(new FileReader(txtFile)).useDelimiter("%#&!");
+            FileInputStream fileInputStream = new FileInputStream(txtFile);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF8");
+
+
+            Scanner in = new Scanner(inputStreamReader).useDelimiter("%#&!");
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH);
 
             while(in.hasNext()){
 
                 Job job = new Job();
+
                 job.setTITLE(in.next());
-              //  System.out.println(in.next());
                 job.setCOMPANY(in.next());
                 job.setURL(in.next());
                 LocalDate date = LocalDate.parse(in.next().substring( 0,10), formatter);
                 job.setDateapplied(date);
 
-                jobs.add(job);
+
+               jobs.add(job);
             }
 
 
@@ -77,7 +80,9 @@ public class JobbListController {
     public void addJobToList(Job newJob){
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter(txtFile, true));
+
+
+           bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(txtFile, true), StandardCharsets.UTF_8));
             bw.write(
                     "%#&!" + newJob.getTITLE() +
                     "%#&!" + newJob.getCOMPANY() +
@@ -110,13 +115,7 @@ public class JobbListController {
 
 
             for(Job jobs : jobbList){
-                out.write(
-                     "%#&!" + jobs.getTITLE() +
-                         "%#&!" + jobs.getCOMPANY() +
-                         "%#&!" + jobs.getURL() +
-                         "%#&!" + jobs.getDateapplied() );
-                out.newLine();
-
+               addJobToList(jobs);
             }
 
 
@@ -131,21 +130,26 @@ public class JobbListController {
     }
 
 
-    public ObservableList<Job> getSearchedJobbListFromOldTxt(){
+    private ObservableList<Job> getSearchedJobbListFromOldTxt(){
         ObservableList<Job> jobs = FXCollections.observableArrayList();
 
         try {
-            Scanner in = new Scanner(new FileReader("searchedJobbs.txt"));
+            FileInputStream fileInputStream = new FileInputStream("searchedJobbs.txt");
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF8");
+
+
+            Scanner in = new Scanner(inputStreamReader);
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH);
 
             while(in.hasNext()){
 
                 Job jobb = new Job();
-                jobb.setTITLE(in.next().replace("�","ö"));
+                jobb.setTITLE(in.next());
                 jobb.setURL(in.next());
                 LocalDate date = LocalDate.parse(in.next(), formatter);
                 jobb.setDateapplied(date);
 
+                System.out.println(jobb.getTITLE());
                 jobs.add(jobb);
 
             }

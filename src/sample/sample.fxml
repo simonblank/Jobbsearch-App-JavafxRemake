@@ -10,31 +10,43 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="490.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="499.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <fx:include fx:id="interviewTab" source="FxmlFiles/interview_View.fxml" />
       <fx:include fx:id="passwordTab" source="FxmlFiles/pass_View.fxml" />
       <fx:include fx:id="jobListTab" source="FxmlFiles/jobbList_View.fxml" />
-      <AnchorPane layoutX="-3.0" prefHeight="112.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">
+      <fx:include fx:id="workTab" source="FxmlFiles/work_View.fxml" />
+      <fx:include fx:id="informationTab" source="FxmlFiles/information_View.fxml" />
+      <AnchorPane layoutX="-3.0" prefHeight="112.0" prefWidth="503.0" style="-fx-background-color: #3D4956;">
          <children>
-            <ImageView fx:id="PASSWORD" fitHeight="87.0" fitWidth="106.0" layoutX="34.0" layoutY="13.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="PASSWORD" fitHeight="66.0" fitWidth="60.0" layoutX="22.0" layoutY="27.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/passIcon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="LIST" fitHeight="87.0" fitWidth="106.0" layoutX="143.0" layoutY="13.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="LIST" fitHeight="52.0" fitWidth="52.0" layoutX="100.0" layoutY="34.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/listIcon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="INTERVIEW" fitHeight="87.0" fitWidth="106.0" layoutX="273.0" layoutY="13.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="INTERVIEW" fitHeight="74.0" fitWidth="75.0" layoutX="183.0" layoutY="20.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/interviewIcon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="EXIT" fitHeight="87.0" fitWidth="106.0" layoutX="384.0" layoutY="12.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="EXIT" fitHeight="73.0" fitWidth="75.0" layoutX="409.0" layoutY="21.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/escapeIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="WORK" fitHeight="73.0" fitWidth="52.0" layoutX="274.0" layoutY="31.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/workIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="INFORMATION" fitHeight="73.0" fitWidth="60.0" layoutX="343.0" layoutY="27.0" onMouseClicked="#handleButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/informationIcon.png" />
                </image>
             </ImageView>
          </children>

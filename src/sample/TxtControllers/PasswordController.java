@@ -3,6 +3,7 @@ package sample.TxtControllers;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import sample.Model.Password;
+import sun.nio.cs.UTF_32;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -46,6 +47,7 @@ public class PasswordController {
                         "%#&!" + newPassword.getPASSWORD());
             bw.newLine();
             bw.flush();
+            bw.close();
 
 
 
@@ -66,7 +68,10 @@ public class PasswordController {
 
 
         try {
-            Scanner in = new Scanner(new FileReader(txtFile)).useDelimiter("%#&!");
+            FileInputStream fileInputStream = new FileInputStream(txtFile);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF8");
+
+            Scanner in = new Scanner(inputStreamReader).useDelimiter("%#&!");
 
             while(in.hasNext()){
 
@@ -80,6 +85,8 @@ public class PasswordController {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
         }
 
         return passwordList;
@@ -87,17 +94,16 @@ public class PasswordController {
 
     public void rewritePasswordList(ObservableList<Password> passwordList){
         try {
-            FileWriter fileWriter = new FileWriter(txtFile);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            FileOutputStream fileOutputStream = new FileOutputStream(txtFile);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream , "UTF8");
+
 
             for(Password password : passwordList){
-              bufferedWriter.write(
-                      "%#&!" + password.getPLACE() +
-                          "%#&!" + password.getPASSWORD());
+               addPasswordToList(password);
             }
 
 
-            bufferedWriter.close();
+            outputStreamWriter.close();
 
 
         } catch (Exception e) {

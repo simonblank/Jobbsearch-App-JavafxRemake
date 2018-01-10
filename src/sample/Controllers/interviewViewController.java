@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import sample.KeyEventHandler;
 import sample.Model.Interview;
 import sample.Model.Job;
 import sample.TxtControllers.InterviewController;
@@ -45,15 +46,14 @@ public class interviewViewController {
 
 
     private InterviewController interviewController = new InterviewController();
+    private ObservableList<Interview> allInterviewsList = FXCollections.observableArrayList();
     private ObservableList<Interview> upcomingInterviews = FXCollections.observableArrayList();
-    private ObservableList pastInterviews = FXCollections.observableArrayList();
+    private ObservableList<Interview> pastInterviews = FXCollections.observableArrayList();
 
 
     public void initialize(){
-        for(Interview interview : interviewController.getInterviewListFromTxt()){
-            sortInterviewsByDate(interview);
+        interviewController.getInterviewListFromTxt().forEach(this::sortInterviewsByDate);
 
-        }
         upCompany.setCellValueFactory(new PropertyValueFactory<Interview, String>("COMPANY"));
         upDate.setCellValueFactory(new PropertyValueFactory<Interview, String>("INTERVIEWDAY"));
 
@@ -72,7 +72,6 @@ public class interviewViewController {
     }
 
     public void sortInterviewsByDate(Interview interview){
-
             if(interview.getINTERVIEWDAY().isAfter(LocalDate.now())){
                 upcomingInterviews.addAll(interview);
             }
@@ -94,35 +93,35 @@ public class interviewViewController {
 
 
             sortInterviewsByDate(interview);
+            allInterviewsList.addAll(interview);
 
             company_Textfield.clear();
         }
     }
 
     public void handleUpcomingTableKeyEvent(KeyEvent event){
-        if(!upcomingInterviewTable.getSelectionModel().getSelectedItems().isEmpty()){
-            if(event.getCode().equals(KeyCode.DELETE)){
-                ObservableList<Interview> interviewSelected ;
-                interviewSelected = upcomingInterviewTable.getSelectionModel().getSelectedItems();
+        KeyEventHandler keyEventHandler = new KeyEventHandler();
 
-                upcomingInterviews.removeAll(interviewSelected);
-            //    interviewController.rewriteInterviewList(interviewController.getInterviewListFromTxt().removeAll(interviewSelected));
+        if(keyEventHandler.isItemSelectedInTable(upcomingInterviewTable)){
+            if(keyEventHandler.deleteKeyIsPressed(event)){
+                upcomingInterviews.removeAll(upcomingInterviewTable.getSelectionModel().getSelectedItems());
+                rewriteInterviewList();
 
             }
 
         }
 
     }
-
 
     public void handlePastTableKeyEvent(KeyEvent event){
-        if(!pastInterviewTable.getSelectionModel().getSelectedItems().isEmpty()){
-            if(event.getCode().equals(KeyCode.DELETE)){
-                ObservableList<Interview> interviewSelected ;
-                interviewSelected = pastInterviewTable.getSelectionModel().getSelectedItems();
+        KeyEventHandler keyEventHandler = new KeyEventHandler();
 
-                pastInterviews.removeAll(interviewSelected);
-                // jobbListController.rewriteAppliedJobList(jobs);
+        if(keyEventHandler.isItemSelectedInTable(pastInterviewTable)){
+            if(keyEventHandler.deleteKeyIsPressed(event)){
+
+                pastInterviews.removeAll(pastInterviewTable.getSelectionModel().getSelectedItems());
+                 rewriteInterviewList();
+
 
             }
 
@@ -130,6 +129,16 @@ public class interviewViewController {
 
     }
 
+    public void rewriteInterviewList(){
+        allInterviewsList.clear();
+        allInterviewsList.addAll(upcomingInterviews);
+        allInterviewsList.addAll(pastInterviews);
+        System.out.println(allInterviewsList.size());
+
+        interviewController.rewriteInterviewList(allInterviewsList);
+
+
+    }
 
 
 

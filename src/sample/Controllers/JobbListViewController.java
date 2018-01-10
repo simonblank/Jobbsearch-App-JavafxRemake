@@ -4,19 +4,23 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
 import javafx.scene.layout.AnchorPane;
+import sample.KeyEventHandler;
 import sample.Model.Job;
 import sample.Model.Password;
+import sample.TxtControllers.JobWebsiteListController;
 import sample.TxtControllers.JobbListController;
 import sample.TxtControllers.PasswordController;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.time.LocalDate;
 
 /**
@@ -32,6 +36,9 @@ public class JobbListViewController {
 
     @FXML
     private TextField title_TextField, company_TextField ,url_TextField;
+
+    @FXML
+    private ComboBox<String> jobWebsites_comboBox;
 
     @FXML
     private TextField search_TextField;
@@ -50,41 +57,37 @@ public class JobbListViewController {
 
 
     public void initialize(){
+        addWebsitesTo_JobSearchingWebsite_List();
+
         title.setCellValueFactory(new PropertyValueFactory<Job, String>("TITLE"));
         company.setCellValueFactory(new PropertyValueFactory<Job, String>("COMPANY"));
         date.setCellValueFactory(new PropertyValueFactory<Job, String>("dateapplied"));
 
         jobListTableView.setItems(jobs);
+        sortTableByDateDesc();
     }
 
     public void JobListTableHandleKeyClick(KeyEvent event){
-        Clipboard clipboard = Clipboard.getSystemClipboard();
-        ClipboardContent clipboardContent = new ClipboardContent();
+        KeyEventHandler keyEventHandler = new KeyEventHandler();
 
-        if(!jobListTableView.getSelectionModel().getSelectedItems().isEmpty()) {
+        if(keyEventHandler.isItemSelectedInTable(jobListTableView)) {
 
-            if (event.getText().equals("1")) {
-                clipboardContent.putString(jobListTableView.getSelectionModel().getSelectedItems().get(0).getTITLE());
-                clipboard.setContent(clipboardContent);
+            if (keyEventHandler.key_1_IsPressed(event)) {
+                keyEventHandler.addToClipBoard(jobListTableView.getSelectionModel().getSelectedItems().get(0).getTITLE());
 
-            } else if (event.getText().equals("2")) {
-                clipboardContent.putString(jobListTableView.getSelectionModel().getSelectedItems().get(0).getCOMPANY());
-                clipboard.setContent(clipboardContent);
+            } else if (keyEventHandler.key_2_IsPressed(event)) {
+                keyEventHandler.addToClipBoard(jobListTableView.getSelectionModel().getSelectedItems().get(0).getCOMPANY());
 
-            } else if (event.getText().equals("3")) {
-                clipboardContent.putString(jobListTableView.getSelectionModel().getSelectedItems().get(0).getDateapplied().toString());
-                clipboard.setContent(clipboardContent);
+            } else if (keyEventHandler.key_3_IsPressed(event)){
+                keyEventHandler.addToClipBoard(jobListTableView.getSelectionModel().getSelectedItems().get(0).getDateapplied().toString());
 
-            } else if (event.getText().equals("4")) {
-                clipboardContent.putString(jobListTableView.getSelectionModel().getSelectedItems().get(0).getURL());
-                clipboard.setContent(clipboardContent);
+            } else if (keyEventHandler.key_4_IsPressed(event)) {
+                keyEventHandler.addToClipBoard(jobListTableView.getSelectionModel().getSelectedItems().get(0).getURL());
 
-            } else if (event.getCode().equals(KeyCode.DELETE)) {
-                ObservableList<Job> passwordSelected ;
-                passwordSelected = jobListTableView.getSelectionModel().getSelectedItems();
-
-                jobs.removeAll(passwordSelected);
+            } else if (keyEventHandler.deleteKeyIsPressed(event)) {
+                jobs.removeAll(jobListTableView.getSelectionModel().getSelectedItems());
                 jobbListController.rewriteAppliedJobList(jobs);
+
             }
 
 
@@ -94,11 +97,12 @@ public class JobbListViewController {
     public void searchButtonHandleClick(){
        ObservableList<Job> searchList = FXCollections.observableArrayList();
 
+
         for(Job job : jobbListController.getSearchedJobListFromTxt()){
-            if(job.getTITLE().contains(search_TextField.getText())){
+            if(job.getTITLE().toLowerCase().contains(search_TextField.getText().toLowerCase())){
                 searchList.addAll(job);
             }
-            else if(job.getCOMPANY().contains(search_TextField.getText())){
+            else if(job.getCOMPANY().toLowerCase().contains(search_TextField.getText().toLowerCase())){
                 searchList.addAll(job);
             }
         }
@@ -116,8 +120,9 @@ public class JobbListViewController {
         LocalDate localDate =LocalDate.now();
         job.setDateapplied(localDate);
 
-        jobListTableView.getItems().addAll(job);
+        jobs.add(0,job);
         jobbListController.addJobToList(job);
+
 
         title_TextField.clear();
         company_TextField.clear();
@@ -136,6 +141,35 @@ public class JobbListViewController {
         }
 
     }
+
+    public void visitWebsiteHandleClick(){
+        try{
+            try {
+                Desktop.getDesktop().browse(new URI(jobWebsites_comboBox.getValue()));
+
+            } catch (IOException | URISyntaxException e1) {
+                e1.printStackTrace();
+            }
+
+
+        }catch (Exception e){}
+
+    }
+
+    private void sortTableByDateDesc(){
+            date.setComparator(date.getComparator().reversed());
+            jobListTableView.getSortOrder().add(date);
+
+    }
+
+    private void addWebsitesTo_JobSearchingWebsite_List(){
+        JobWebsiteListController jobWebsiteListController = new JobWebsiteListController();
+        jobWebsites_comboBox.getItems().addAll(jobWebsiteListController.getJobWebsiteListFromTxt());
+        jobWebsites_comboBox.setValue("www.arbetsformedlingen.se/");
+
+    }
+
+
 
 
 }

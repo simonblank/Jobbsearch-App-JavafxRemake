@@ -6,6 +6,7 @@ import sample.Model.Interview;
 import sample.Model.Job;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -41,7 +42,10 @@ public class InterviewController {
         ObservableList<Interview> interviewList = FXCollections.observableArrayList();
 
         try {
-            Scanner in = new Scanner(new FileReader(txtFile)).useDelimiter("%#&!");
+            FileInputStream fileInputStream = new FileInputStream(txtFile);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, "UTF8");
+
+            Scanner in = new Scanner(inputStreamReader).useDelimiter("%#&!");
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.ENGLISH);
 
             while(in.hasNext()){
@@ -92,22 +96,22 @@ public class InterviewController {
     }
 
     public void rewriteInterviewList(ObservableList<Interview> interviewList){
-
         try {
-            FileWriter fileWriter = new FileWriter(txtFile);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            BufferedWriter out = new BufferedWriter
+                    (new OutputStreamWriter(new FileOutputStream(txtFile), StandardCharsets.UTF_8));
+
 
             for(Interview interview : interviewList){
-                bufferedWriter.write(
+                out.write(
                         "%#&!" + interview.getCOMPANY() +
-                                "%#&!" + interview.getCOMPANY()
+                                "%#&!" + interview.getINTERVIEWDAY()
                 );
-                bufferedWriter.newLine();
+                out.newLine();
 
             }
 
 
-            bufferedWriter.close();
+            out.close();
 
 
         } catch (IOException e) {

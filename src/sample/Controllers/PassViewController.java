@@ -8,13 +8,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.Clipboard;
-import javafx.scene.input.ClipboardContent;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.input.*;
 import javafx.scene.layout.AnchorPane;
+import sample.KeyEventHandler;
 import sample.Model.Password;
 import sample.TxtControllers.PasswordController;
+import sample.TxtControllers.TxtReader;
 
 /**
  * Created by simon on 12/12/2017.
@@ -36,6 +35,11 @@ public class PassViewController {
     private ObservableList<Password> passwords = passwordController.getPasswordListFromTxt();
 
     public void initialize(){
+     /*   TxtReader txtReader = new TxtReader("JobbList.txt");
+        System.out.println(
+        txtReader.getTextFromTxt()
+        );*/
+
         place.setCellValueFactory(new PropertyValueFactory<Password, String>("PLACE"));
         password.setCellValueFactory(new PropertyValueFactory<Password, String>("PASSWORD"));
 
@@ -56,23 +60,35 @@ public class PassViewController {
     }
 
     public void handleRemovePasswordClick(){
-        ObservableList<Password> passwordSelected ;
-        passwordSelected = passwordTableView.getSelectionModel().getSelectedItems();
-
-        passwords.removeAll(passwordSelected);
-        passwordController.rewritePasswordList(passwords);
+        removePassword();
     }
 
-
     public void passwordTableHandleKeyClick(KeyEvent event){
+        KeyEventHandler keyEventHandler = new KeyEventHandler();
 
-        if(event.getText().equals("c") && !passwordTableView.getSelectionModel().getSelectedItems().isEmpty()) {
+        if(keyEventHandler.isItemSelectedInTable(passwordTableView)){
 
-            Clipboard clipboard = Clipboard.getSystemClipboard();
-            ClipboardContent clipboardContent = new ClipboardContent();
-            clipboardContent.putString(passwordTableView.getSelectionModel().getSelectedItems().get(0).getPASSWORD());
-            clipboard.setContent(clipboardContent);
+            if(keyEventHandler.key_1_IsPressed(event) ) {
+                keyEventHandler.addToClipBoard(passwordTableView.getSelectionModel().getSelectedItems().get(0).getPLACE());
+
+            }
+            else if(keyEventHandler.key_2_IsPressed(event) ) {
+                keyEventHandler.addToClipBoard(passwordTableView.getSelectionModel().getSelectedItems().get(0).getPASSWORD());
+
+            }
+            else if(keyEventHandler.deleteKeyIsPressed(event)){
+                removePassword();
+            }
+
         }
+
+    }
+
+    private void removePassword(){
+        passwords.removeAll(passwordTableView.getSelectionModel().getSelectedItems());
+
+        passwordController.rewritePasswordList(passwords);
+
     }
 
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="interview_View" prefHeight="652.0" prefWidth="497.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="add_View" layoutY="120.0" prefHeight="541.0" prefWidth="497.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Label layoutX="14.0" layoutY="51.0" prefHeight="37.0" prefWidth="485.0" text="to delete from a table select a row and press delete or use delete button if there is one" textFill="#ccc7c7" />
+            <Label layoutX="14.0" layoutY="88.0" prefHeight="17.0" prefWidth="464.0" text="to easily get the data in the table row and press 1 to get the text " textFill="#ccc7c7" />
+            <Label layoutX="114.0" layoutY="34.0" prefHeight="17.0" prefWidth="257.0" text="most of the tables have keybinds " textFill="#ccc7c7" />
+            <Label layoutX="14.0" layoutY="105.0" prefHeight="17.0" prefWidth="464.0" text="for the first table press 2 for 2 and so on" textFill="#ccc7c7" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
