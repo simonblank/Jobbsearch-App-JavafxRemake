@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Passwords.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -84,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/Tests/TxtControllers/JobbListControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#test_AddToTxt#0;class#JobbListControllerTest#0" expanded="false" />
@@ -113,6 +116,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -177,6 +183,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -195,69 +202,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="TxtControllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MultiToolBox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="TxtControllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MultiToolBox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -916,6 +881,7 @@
       <workItem from="1515149234520" duration="5190000" />
       <workItem from="1515192966053" duration="1116000" />
       <workItem from="1515416043814" duration="17300000" />
+      <workItem from="1515584409144" duration="42000" />
     </task>
     <servers />
   </component>
@@ -952,7 +918,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163808000" />
+    <option name="totallyTimeSpent" value="163850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -965,19 +931,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27505568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27505568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29850745" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30170575" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1021,9 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#handleButtonClick#0;class#Controller#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,9 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#handleButtonClick#0;class#Controller#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,9 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="method#handleButtonClick#0;class#Controller#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1260,9 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="method#handleButtonClick#0;class#Controller#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,9 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1308,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,10 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="method#createTxtFileIfDontExists#0;class#PasswordController#0" expanded="false" />
-            <element signature="method#addPasswordToList#0;class#PasswordController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,10 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="method#addInterviewToList#0;class#InterviewController#0" expanded="false" />
-            <element signature="method#rewriteInterviewList#0;class#InterviewController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1338,15 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="158" column="38" lean-forward="false" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
-          <folding>
-            <element signature="method#JobListTableHandleKeyClick#0;class#JobbListViewController#0" expanded="false" />
-            <element signature="method#searchButtonHandleClick#0;class#JobbListViewController#0" expanded="false" />
-            <element signature="method#addSearchedJob#0;class#JobbListViewController#0" expanded="false" />
-            <element signature="method#addSearchedJobHandleClick#0;class#JobbListViewController#0" expanded="false" />
-            <element signature="method#visitWebsiteHandleClick#0;class#JobbListViewController#0" expanded="false" />
-            <element signature="method#sortTableByDateDesc#0;class#JobbListViewController#0" expanded="false" />
-            <element signature="method#addWebsitesTo_JobSearchingWebsite_List#0;class#JobbListViewController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,10 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="method#createTxtFileIfDontExists#0;class#JobWebsiteListController#0" expanded="false" />
-            <element signature="method#getJobWebsiteListFromTxt#0;class#JobWebsiteListController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,7 +1294,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#test_AddToTxt#0;class#JobbListControllerTest#0" expanded="false" />
+            <element signature="method#test_RewriteTxtFile#0;class#JobbListControllerTest#0" expanded="false" />
+            <element signature="method#checkForUnreadableChars#0;class#JobbListControllerTest#0" expanded="false" />
+            <element signature="method#checkIfCanHandleSweChars#0;class#JobbListControllerTest#0" expanded="false" />
+            <element signature="method#cleanUp#0;class#JobbListControllerTest#0" expanded="false" />
+            <element signature="method#get_TestJob#0;class#JobbListControllerTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1373,7 +1310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1395,7 +1331,7 @@
     <entry file="file://$PROJECT_DIR$/src/Tests/TxtControllers/JobbListControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="131" column="0" lean-forward="true" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#test_AddToTxt#0;class#JobbListControllerTest#0" expanded="false" />
