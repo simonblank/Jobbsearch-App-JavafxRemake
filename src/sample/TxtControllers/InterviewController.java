@@ -73,7 +73,7 @@ public class InterviewController {
     public void addInterviewToList(Interview newInterview){
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter(txtFile, true));
+            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(txtFile, true), StandardCharsets.UTF_8));
             bw.write(
                     "%#&!" + newInterview.getCOMPANY() +
                             "%#&!" + newInterview.getINTERVIEWDAY()
@@ -102,11 +102,7 @@ public class InterviewController {
 
 
             for(Interview interview : interviewList){
-                out.write(
-                        "%#&!" + interview.getCOMPANY() +
-                                "%#&!" + interview.getINTERVIEWDAY()
-                );
-                out.newLine();
+                addInterviewToList(interview);
 
             }
 

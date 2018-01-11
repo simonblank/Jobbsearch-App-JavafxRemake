@@ -99,3 +99,4 @@
 %#&!adecco-Junior-utvecklare-sökes-till-vörldsledande-förpackningsföretag%#&!null%#&!https://www.adecco.se/ansok?zlid=EF40A7C9-87CC-4A76-BADA-A335F9CD3F05&src=metrojobb&tag=feed%#&!2017-10-30
 %#&!Javautvecklare-hos-Consat%#&!null%#&!https://register.masterhelp.se/candidate/register%#&!2017-10-30
 %#&!alten-sverige%#&!null%#&!http://www.alten.se/arbeta-hos-alten/oppen-ansokan?jobid=4344%#&!2017-10-30
+%#&!test%#&!test%#&!%#&!2018-01-11

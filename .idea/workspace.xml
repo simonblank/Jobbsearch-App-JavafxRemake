@@ -7,8 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Passwords.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MultiToolBox/sample/TxtControllers/InterviewController.class" afterPath="$PROJECT_DIR$/out/production/MultiToolBox/sample/TxtControllers/InterviewController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterviewList.txt" afterPath="$PROJECT_DIR$/InterviewList.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JobbList.txt" afterPath="$PROJECT_DIR$/JobbList.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java" afterPath="$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java" afterPath="$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,12 +73,11 @@
       <file leaf-file-name="JobbListController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/JobbListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="method#JobbListController#0;class#JobbListController#0" expanded="false" />
                 <element signature="method#createTxtFileIfDontExists#0;class#JobbListController#0" expanded="false" />
-                <element signature="method#getSearchedJobListFromTxt#0;class#JobbListController#0" expanded="false" />
                 <element signature="method#addJobToList#0;class#JobbListController#0" expanded="false" />
                 <element signature="method#rewriteAppliedJobList#0;class#JobbListController#0" expanded="false" />
                 <element signature="method#getSearchedJobbListFromOldTxt#0;class#JobbListController#0" expanded="false" />
@@ -83,19 +86,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobbListControllerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tests/TxtControllers/JobbListControllerTest.java">
+      <file leaf-file-name="interviewViewController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#test_AddToTxt#0;class#JobbListControllerTest#0" expanded="false" />
-                <element signature="method#test_RewriteTxtFile#0;class#JobbListControllerTest#0" expanded="false" />
-                <element signature="method#checkForUnreadableChars#0;class#JobbListControllerTest#0" expanded="false" />
-                <element signature="method#checkIfCanHandleSweChars#0;class#JobbListControllerTest#0" expanded="false" />
-                <element signature="method#cleanUp#0;class#JobbListControllerTest#0" expanded="false" />
-                <element signature="method#get_TestJob#0;class#JobbListControllerTest#0" expanded="false" />
+                <element signature="method#initialize#0;class#interviewViewController#0" expanded="false" />
+                <element signature="method#addButtonHandleClick#0;class#interviewViewController#0" expanded="false" />
+                <element signature="method#handleUpcomingTableKeyEvent#0;class#interviewViewController#0" expanded="false" />
+                <element signature="method#handlePastTableKeyEvent#0;class#interviewViewController#0" expanded="false" />
+                <element signature="method#rewriteInterviewList#0;class#interviewViewController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterviewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
+              <folding>
+                <element signature="method#createTxtFileIfDontExists#0;class#InterviewController#0" expanded="false" />
+                <element signature="method#addInterviewToList#0;class#InterviewController#0" expanded="false" />
+                <element signature="method#rewriteInterviewList#0;class#InterviewController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -151,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/txtReader.java" />
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/TxtReader.java" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/PassViewController.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java" />
         <option value="$PROJECT_DIR$/src/Tests/Controllers/WorkViewControllerTests.java" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/WorkViewControllerTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/KeyEventHandlerTest.java" />
@@ -161,12 +175,13 @@
         <option value="$PROJECT_DIR$/JobWebsiteList.txt" />
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/PasswordController.java" />
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/WorkController.java" />
-        <option value="$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java" />
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/JobWebsiteListController.java" />
         <option value="$PROJECT_DIR$/src/sample/Controllers/JobbListViewController.java" />
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/JobbListControllerTest.java" />
         <option value="$PROJECT_DIR$/src/sample/TxtControllers/JobbListController.java" />
         <option value="$PROJECT_DIR$/src/Tests/TxtControllers/JobbListControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java" />
       </list>
     </option>
   </component>
@@ -202,10 +217,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,6 +238,13 @@
               <item name="Jobbsearch-App-JavafxRemake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jobbsearch-App-JavafxRemake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jobbsearch-App-JavafxRemake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -244,7 +266,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New folder (20)/Jobbsearch-App-JavafxRemake-master" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -881,7 +903,11 @@
       <workItem from="1515149234520" duration="5190000" />
       <workItem from="1515192966053" duration="1116000" />
       <workItem from="1515416043814" duration="17300000" />
-      <workItem from="1515584409144" duration="42000" />
+      <workItem from="1515584409144" duration="915000" />
+      <workItem from="1515596961180" duration="858000" />
+      <workItem from="1515611004782" duration="266000" />
+      <workItem from="1515667541217" duration="77000" />
+      <workItem from="1515667651067" duration="433000" />
     </task>
     <servers />
   </component>
@@ -918,7 +944,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163850000" />
+    <option name="totallyTimeSpent" value="166357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -931,12 +957,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27505568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3452116" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30170575" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31449893" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -967,7 +993,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -991,13 +1017,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
@@ -1015,13 +1041,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
@@ -1039,13 +1065,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/PasswordController.java" />
@@ -1072,24 +1098,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FxmlFiles/jobbList_View.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FxmlFiles/addJobb_View.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/FxmlFiles/interview_View.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="244" lean-forward="false" selection-start-line="7" selection-start-column="244" selection-end-line="7" selection-end-column="244" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterviewList.txt">
@@ -1102,13 +1128,13 @@
     <entry file="file://$PROJECT_DIR$/src/sample/Tests.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Tests/HeadControllerTest.groovy" />
     <entry file="file://$PROJECT_DIR$/src/sample/FxmlFiles/pass_View.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="78" lean-forward="false" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/searchedJobbs.txt">
@@ -1133,23 +1159,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FxmlFiles/information_View.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/TxtReader.java">
@@ -1163,13 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="115" column="55" lean-forward="false" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1197,13 +1216,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/FxmlFiles/work_View.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/Controllers/WorkViewControllerTest.java">
@@ -1269,20 +1288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/JobbListViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="158" column="38" lean-forward="false" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/JobWebsiteListController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1313,24 +1318,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/JobbListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding>
-            <element signature="method#JobbListController#0;class#JobbListController#0" expanded="false" />
-            <element signature="method#createTxtFileIfDontExists#0;class#JobbListController#0" expanded="false" />
-            <element signature="method#getSearchedJobListFromTxt#0;class#JobbListController#0" expanded="false" />
-            <element signature="method#addJobToList#0;class#JobbListController#0" expanded="false" />
-            <element signature="method#rewriteAppliedJobList#0;class#JobbListController#0" expanded="false" />
-            <element signature="method#getSearchedJobbListFromOldTxt#0;class#JobbListController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/TxtControllers/JobbListControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="680">
           <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1340,6 +1330,63 @@
             <element signature="method#checkIfCanHandleSweChars#0;class#JobbListControllerTest#0" expanded="false" />
             <element signature="method#cleanUp#0;class#JobbListControllerTest#0" expanded="false" />
             <element signature="method#get_TestJob#0;class#JobbListControllerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/InterviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="97" column="77" lean-forward="false" selection-start-line="97" selection-start-column="77" selection-end-line="97" selection-end-column="77" />
+          <folding>
+            <element signature="method#createTxtFileIfDontExists#0;class#InterviewController#0" expanded="false" />
+            <element signature="method#addInterviewToList#0;class#InterviewController#0" expanded="false" />
+            <element signature="method#rewriteInterviewList#0;class#InterviewController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/TxtControllers/JobbListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="method#JobbListController#0;class#JobbListController#0" expanded="false" />
+            <element signature="method#createTxtFileIfDontExists#0;class#JobbListController#0" expanded="false" />
+            <element signature="method#addJobToList#0;class#JobbListController#0" expanded="false" />
+            <element signature="method#rewriteAppliedJobList#0;class#JobbListController#0" expanded="false" />
+            <element signature="method#getSearchedJobbListFromOldTxt#0;class#JobbListController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/JobbListViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="158" column="26" lean-forward="false" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+          <folding>
+            <element signature="method#initialize#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#JobListTableHandleKeyClick#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#searchButtonHandleClick#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#addSearchedJob#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#addSearchedJobHandleClick#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#visitWebsiteHandleClick#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#sortTableByDateDesc#0;class#JobbListViewController#0" expanded="false" />
+            <element signature="method#addWebsitesTo_JobSearchingWebsite_List#0;class#JobbListViewController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controllers/interviewViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#interviewViewController#0" expanded="false" />
+            <element signature="method#addButtonHandleClick#0;class#interviewViewController#0" expanded="false" />
+            <element signature="method#handleUpcomingTableKeyEvent#0;class#interviewViewController#0" expanded="false" />
+            <element signature="method#handlePastTableKeyEvent#0;class#interviewViewController#0" expanded="false" />
+            <element signature="method#rewriteInterviewList#0;class#interviewViewController#0" expanded="false" />
           </folding>
         </state>
       </provider>
