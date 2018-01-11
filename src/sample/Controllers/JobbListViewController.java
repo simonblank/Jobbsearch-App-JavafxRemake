@@ -94,6 +94,15 @@ public class JobbListViewController {
         }
     }
 
+    public void searchfieldHandleKeyClick(KeyEvent event){
+        KeyEventHandler keyEventHandler = new KeyEventHandler();
+
+        if(keyEventHandler.enterKeyIsPressed(event)){
+            searchButtonHandleClick();
+        }
+    }
+
+
     public void searchButtonHandleClick(){
        ObservableList<Job> searchList = FXCollections.observableArrayList();
 

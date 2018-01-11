@@ -35,7 +35,7 @@
                </columns>
             </TableView>
             <Button fx:id="search_Button" layoutX="48.0" layoutY="468.0" mnemonicParsing="false" onAction="#searchButtonHandleClick" prefHeight="25.0" prefWidth="402.0" text="Search" />
-            <TextField fx:id="search_TextField" layoutX="122.0" layoutY="424.0" prefHeight="25.0" prefWidth="254.0" />
+            <TextField fx:id="search_TextField" layoutX="122.0" layoutY="424.0" onKeyPressed="#searchfieldHandleKeyClick" prefHeight="25.0" prefWidth="254.0" />
             <ImageView fx:id="ADD" fitHeight="25.0" fitWidth="23.0" layoutX="453.0" layoutY="26.0" onMouseClicked="#addSearchedJobHandleClick" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/addIcon.png" />

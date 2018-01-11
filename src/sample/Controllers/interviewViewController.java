@@ -73,7 +73,7 @@ public class interviewViewController {
 
     public void sortInterviewsByDate(Interview interview){
 
-            if(interview.getINTERVIEWDAY().isAfter(LocalDate.now().minusDays(1))){
+            if(isTodayOrAfterToday(interview.getINTERVIEWDAY())){
                 upcomingInterviews.addAll(interview);
             }
             else {
@@ -141,6 +141,10 @@ public class interviewViewController {
 
     }
 
+    public boolean isTodayOrAfterToday(LocalDate localDate){
+        return localDate.isAfter(LocalDate.now().minusDays(1));
+
+    }
 
 
 }

@@ -32,6 +32,7 @@ public class KeyEventHandler {
     public Boolean key_4_IsPressed(KeyEvent event){
         return event.getText().equals("4");
     }
+    public Boolean enterKeyIsPressed(KeyEvent event){return event.getCode().equals(KeyCode.ENTER);  }
 
     public void addToClipBoard(String input){
         Clipboard clipboard = Clipboard.getSystemClipboard();
